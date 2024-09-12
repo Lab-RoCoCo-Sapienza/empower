@@ -57,7 +57,7 @@ conda-env config vars set OPENAI_API_KEY=<YOUR API KEY>
 # Usage
 Clone this repo
 ```
-https://github.com/Fra-Tsuna/vlm-grasping.git
+git clone https://github.com/Lab-RoCoCo-Sapienza/empower.git
 ```
 
 Build the package with catkin
