@@ -39,19 +39,30 @@ To download the pre-trained weights and the encoder and decoder ONNX models foll
 After the download, put the models and weights in the ```config/efficientvitsam/``` directory.
 For our tests, we used the ```l2``` model.
 
+## Spacy
+```python -m spacy download en_core_web_sm```
+
 ## Environment
 Create the conda environment from the configuration file
 ```
-conda env create -f environment.yml
+conda create -n empower python=3.8.18
 ```
+
 then activate it with
 ```
 conda activate empower
 ```
+then install the dependencies 
+pip install -r requirements.txt
+
+```
+mim install mmcv==2.0.0 
+mim install mmyolo mmdet
+```
 
 Also, set your OpenAI API key:
 ```
-conda-env config vars set OPENAI_API_KEY=<YOUR API KEY>
+conda env config vars set OPENAI_API_KEY=<YOUR API KEY>
 ```
 
 # Usage
