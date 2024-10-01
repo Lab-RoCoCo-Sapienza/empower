@@ -53,9 +53,9 @@ then activate it with
 conda activate empower
 ```
 then install the dependencies 
-pip install -r requirements.txt
 
 ```
+pip install -r requirements.txt
 mim install mmcv==2.0.0 
 mim install mmyolo mmdet
 ```
