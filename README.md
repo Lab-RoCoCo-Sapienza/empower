@@ -17,7 +17,7 @@
 <div>
 
 [![arxiv paper](https://img.shields.io/badge/Project-Website-blue)](https://lab-rococo-sapienza.github.io/empower/)
-[![arxiv paper](https://img.shields.io/badge/arXiv-TBA-red)](https://lab-rococo-sapienza.github.io/empower/)
+[![arxiv paper](https://img.shields.io/badge/arXiv-PDF-red)](https://lab-rococo-sapienza.github.io/empower/)
 [![license](https://img.shields.io/badge/License-Apache_2.0-yellow)](LICENSE)
 
 </div>
