@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>vlm_grasping</name>
+  <name>empower</name>
   <version>0.0.0</version>
-  <description>The vlm_grasping package</description>
+  <description>The empower package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

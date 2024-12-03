@@ -88,7 +88,7 @@ otherwise set it to False.
 
 Run:
 ```
-rosrun vlm_grasping create_pcl.py
+rosrun empower create_pcl.py
 ```
 to create the pointcloud and the image of the desired scene.
 
@@ -107,18 +107,18 @@ Eventually, ```execute_task``` will produce the plan and will dump it in the cor
 
 Now, run:
 ```
-rosrun vlm_grasping color_pcl.py
+rosrun empower color_pcl.py
 ```
 to obtain the grounded pointcloud with the segmentation masks projected on it.
 
 Then, run:
 ```
-rosrun vlm_grasping spawn_marker_centroids.py
+rosrun empower spawn_marker_centroids.py
 ```
 to ground the detections in the RViz scene and to keep it populated.
 
 Finally, in another terminal run:
 ```
-rosrun vlm_grasping low_level_execution.py 
+rosrun empower low_level_execution.py 
 ```
 to execute the actions needed to achieve the task.
