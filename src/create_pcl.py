@@ -7,7 +7,7 @@ from sensor_msgs.msg import Image, CameraInfo
 from cv_bridge import CvBridge
 from PIL import Image as PILImage
 
-import cPickle as pickle  # For Python 2.x
+import pickle
 from open3d_ros_helper import open3d_ros_helper as orh
 import open3d as o3d
 import cv2
@@ -59,6 +59,8 @@ def listener():
         say_phrase("Ok I will try to do it")
     msg_img = rospy.wait_for_message("/xtion/rgb/image_rect_color", Image)
     img = bridge.imgmsg_to_cv2(msg_img, "bgr8")
+    if not os.path.exists(SCAN_DIR):
+        os.mkdir(SCAN_DIR)
     img_path = SCAN_DIR+'scan.jpg'
     cv2.imwrite(img_path, img)
 
