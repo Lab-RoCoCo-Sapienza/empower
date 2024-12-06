@@ -54,7 +54,7 @@ def say_phrase(phrase):
     goal.rawtext.lang_id = "en_GB"
     client.send_goal_and_wait(goal)
 
-def extract_labels_per_step(plan):
+def extract_labels_per_step(step):
 
     labels = []
     step = step.split(' ')[1:]
