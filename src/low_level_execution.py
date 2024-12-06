@@ -1,24 +1,13 @@
 #!/usr/bin/env python
 
 import rospy
-import open3d as o3d
-import os
 import numpy as np
 import copy
-from visualization_msgs.msg import Marker
 from visualization_msgs.msg import MarkerArray
-from pal_interaction_msgs.msg import TtsAction, TtsGoal
-from actionlib import SimpleActionClient
-import math
-from math import pi
 import rospy
 import sys
-from geometry_msgs.msg import Pose, Quaternion
 import moveit_commander
-import moveit_msgs.msg
 import tf2_ros
-import tf2_py as tf2
-import pickle
 from primitive_actions import *
 from paths import *
 
@@ -46,13 +35,6 @@ def get_R_and_T(trans):
     R = 2*np.array([[pow(qw,2) + pow(qx,2) - 0.5, qx*qy-qw*qz, qw*qy+qx*qz],[qw*qz+qx*qy, pow(qw,2) + pow(qy,2) - 0.5, qy*qz-qw*qx],[qx*qz-qw*qy, qw*qx+qy*qz, pow(qw,2) + pow(qz,2) - 0.5]])
     return R, T
 
-def say_phrase(phrase):
-    client = SimpleActionClient('/tts', TtsAction)
-    client.wait_for_server()
-    goal = TtsGoal()
-    goal.rawtext.text = phrase
-    goal.rawtext.lang_id = "en_GB"
-    client.send_goal_and_wait(goal)
 
 def extract_labels_per_step(step):
 

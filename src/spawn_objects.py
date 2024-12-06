@@ -13,7 +13,7 @@ import tf2_ros
 from conversion_utils import convertCloudFromOpen3dToRos
 
 
-ROOT_DIR = os.path.abspath(__file__+'/../..')
+ROOT_DIR = os.paths.abspath(__file__+'/../..')
 SCAN_DIR = ROOT_DIR+'/images/test_order/'
 
 OUTPUT_DIR = ROOT_DIR+'/output/recycle/'
