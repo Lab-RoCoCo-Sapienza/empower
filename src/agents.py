@@ -6,8 +6,7 @@ import matplotlib.pyplot as plt
 import json
 import cv2
 import os
-import numpy as np
-
+import re
 client = OpenAI()
 visual_prompt = PROMPT_DIR+"visual_agent_prompt.txt"
 plan_prompt = PROMPT_DIR+"planner_hri_agent_prompt.txt"
@@ -67,13 +66,15 @@ class Agent:
         self.image_to_buffer(image)
         json_answer = self.vlm_call(prompt)
         json_answer = json_answer.replace("```json", "").replace("```","")
-        print(json_answer)
+        #print(json_answer)
         json_stucture = json.loads(json_answer)
         #self.create_graph(json_stucture)
-        with open(OUTPUT_DIR + 'json_data.json', 'w') as outfile:
+        '''
+        with open(OUTPUT_DIR + 'json_data.txt', 'w') as outfile:
             json.dump(json_stucture, outfile,indent=4)
-        return json_stucture["Scene description"]
-
+        '''
+        return json_stucture
+    
     def create_graph(self, json_structure):
         G = nx.Graph()
         for obj in json_structure['Objects']:
@@ -93,16 +94,24 @@ class Agent:
 
         plt.show()
                 
-scene = Agent().objects_description("/home/semanticnuc/Pictures/Screenshots/Screenshot from 2024-12-05 15-53-03.png")
+scene = Agent().objects_description("/home/semanticnuc/Pictures/Screenshots/rgb.jpg")
 prompt = open(plan_prompt,"r").read()
-prompt = prompt.replace("<SCENE_DESCRIPTION>", scene)
-print(prompt)
-plan = Agent().llm_call(prompt, "Pour the water into the cup")
+prompt = prompt.replace("<SCENE_DESCRIPTION>", scene["Scene description"])
+conversation = "ORIGINAL TASK: throw away the objects + \n CONVERSATION:" 
+plan = Agent().llm_call(prompt,conversation)
+while "<HUMAN>" in plan or "<HELPER>" in plan or "<ANSWER>" in plan:
+    question = re.search(r"(?<=<HELPER>)(.*)(?=</HELPER>)",plan)
+    llm_answer = re.search(r"(?<=<ANSWER>)(.*)(?=</ANSWER>)",plan)
+    if question != None:
+            human_answer = input(question[0])
+            conversation += "\nYOU:" + question[0] + "\n HUMAN:" + human_answer
+            plan = Agent().llm_call(prompt, conversation)
+    elif llm_answer != None:
+            human_answer = input(llm_answer[0])
+            conversation += "\nYOU:" + llm_answer[0] + "\n HUMAN:" + human_answer
+            plan = Agent().llm_call(prompt, conversation)
+    else:
+        break
 
-while "<HUMAN>" in plan or "<HELP>" in plan:
-    print(plan)
-    answer = input("inserisci risposta ")
-    prompt = prompt.replace("<ANSWER>", answer + "\n<ANSWER>")
-    plan = Agent().llm_call(open(plan_prompt,"r").read(), "Pour the water into the cup")
 print("final")
 print(plan)
