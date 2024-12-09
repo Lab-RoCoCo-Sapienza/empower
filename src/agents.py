@@ -102,6 +102,8 @@ plan = Agent().llm_call(prompt,conversation)
 while "<HUMAN>" in plan or "<HELPER>" in plan or "<ANSWER>" in plan:
     question = re.search(r"(?<=<HELPER>)(.*)(?=</HELPER>)",plan)
     llm_answer = re.search(r"(?<=<ANSWER>)(.*)(?=</ANSWER>)",plan)
+    print(llm_answer)
+    print(question)
     if question != None:
             human_answer = input(question[0])
             conversation += "\nYOU:" + question[0] + "\n HUMAN:" + human_answer
@@ -110,8 +112,6 @@ while "<HUMAN>" in plan or "<HELPER>" in plan or "<ANSWER>" in plan:
             human_answer = input(llm_answer[0])
             conversation += "\nYOU:" + llm_answer[0] + "\n HUMAN:" + human_answer
             plan = Agent().llm_call(prompt, conversation)
-    else:
-        break
 
 print("final")
 print(plan)
