@@ -80,8 +80,6 @@ def listener():
     objects_dict = {}
 
     plan = plan.split('\n')
-    if SPEECH:
-        say_phrase("I have found a plan")
     for name, marker in zip(name_list.markers, centroid_list.markers):
         objects_dict[name.text] = copy.deepcopy(marker)
 
@@ -96,8 +94,6 @@ def listener():
     back_init()
 
     for step in plan:
-        if SPEECH:
-            say_phrase(step)
         command = step.split(' ')[0]
         labels = extract_labels_per_step(step)
         

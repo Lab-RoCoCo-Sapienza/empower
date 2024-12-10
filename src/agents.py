@@ -69,10 +69,10 @@ class Agent:
         #print(json_answer)
         json_stucture = json.loads(json_answer)
         #self.create_graph(json_stucture)
-        '''
+        
         with open(OUTPUT_DIR + 'json_data.txt', 'w') as outfile:
             json.dump(json_stucture, outfile,indent=4)
-        '''
+        
         return json_stucture
     
     def create_graph(self, json_structure):
