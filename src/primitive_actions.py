@@ -18,8 +18,6 @@ import pickle
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 
-move_base_publisher = rospy.Publisher('/mobile_base_controller/cmd_vel')
-
 # GRABBING_QUATERNION =  Quaternion(-0.528,0.412,0.473,0.571)
 GRABBING_QUATERNION = Quaternion(-0.742818371853,-0.0634568007104,0.0418472405416,0.665163821431)
 GRIPPER_OFFSET = 0.15

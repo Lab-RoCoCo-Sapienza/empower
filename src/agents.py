@@ -7,11 +7,11 @@ import json
 import cv2
 import os
 import re
-client = OpenAI()
+
 visual_prompt = PROMPT_DIR+"visual_agent_prompt.txt"
 plan_prompt = PROMPT_DIR+"planner_hri_agent_prompt.txt"
 
-
+client = OpenAI()
 class Agent:
     
     def llm_call(self,prompt, task_description):
@@ -68,7 +68,7 @@ class Agent:
         json_answer = json_answer.replace("```json", "").replace("```","")
         #print(json_answer)
         json_stucture = json.loads(json_answer)
-        #self.create_graph(json_stucture)
+        self.create_graph(json_stucture)
         
         with open(OUTPUT_DIR + 'json_data.txt', 'w') as outfile:
             json.dump(json_stucture, outfile,indent=4)
@@ -93,25 +93,8 @@ class Agent:
         nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
 
         plt.show()
-                
-scene = Agent().objects_description("/home/semanticnuc/Pictures/Screenshots/rgb.jpg")
-prompt = open(plan_prompt,"r").read()
-prompt = prompt.replace("<SCENE_DESCRIPTION>", scene["Scene description"])
-conversation = "ORIGINAL TASK: throw away the objects + \n CONVERSATION:" 
-plan = Agent().llm_call(prompt,conversation)
-while "<HUMAN>" in plan or "<HELPER>" in plan or "<ANSWER>" in plan:
-    question = re.search(r"(?<=<HELPER>)(.*)(?=</HELPER>)",plan)
-    llm_answer = re.search(r"(?<=<ANSWER>)(.*)(?=</ANSWER>)",plan)
-    print(llm_answer)
-    print(question)
-    if question != None:
-            human_answer = input(question[0])
-            conversation += "\nYOU:" + question[0] + "\n HUMAN:" + human_answer
-            plan = Agent().llm_call(prompt, conversation)
-    elif llm_answer != None:
-            human_answer = input(llm_answer[0])
-            conversation += "\nYOU:" + llm_answer[0] + "\n HUMAN:" + human_answer
-            plan = Agent().llm_call(prompt, conversation)
+    
 
-print("final")
-print(plan)
+
+scene = Agent().objects_description("/home/semanticnuc/exchange/src/empower/src/rgb.jpg")
+print(scene)
