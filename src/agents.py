@@ -1,8 +1,8 @@
 from openai import OpenAI
 from paths import PROMPT_DIR, OUTPUT_DIR
 import base64
-import networkx as nx
-import matplotlib.pyplot as plt
+#import networkx as nx
+#import matplotlib.pyplot as plt
 import json
 import cv2
 import os
@@ -68,13 +68,13 @@ class Agent:
         json_answer = json_answer.replace("```json", "").replace("```","")
         #print(json_answer)
         json_stucture = json.loads(json_answer)
-        self.create_graph(json_stucture)
+        #self.create_graph(json_stucture)
         
         with open(OUTPUT_DIR + 'json_data.txt', 'w') as outfile:
             json.dump(json_stucture, outfile,indent=4)
         
         return json_stucture
-    
+    '''
     def create_graph(self, json_structure):
         G = nx.Graph()
         for obj in json_structure['Objects']:
@@ -93,8 +93,4 @@ class Agent:
         nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
 
         plt.show()
-    
-
-
-scene = Agent().objects_description("/home/semanticnuc/exchange/src/empower/src/rgb.jpg")
-print(scene)
+    '''
