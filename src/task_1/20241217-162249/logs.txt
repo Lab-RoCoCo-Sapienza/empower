@@ -1,0 +1,102 @@
+
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; wall", "right to; chairs"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "left to; water bottle"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "right to; yellow box"]
+        },
+        {
+            "Label": "white cup",
+            "Relations": ["on; table", "left to; tape"]
+        },
+        {
+            "Label": "tape",
+            "Relations": ["on; table", "right to; white cup"]
+        },
+        {
+            "Label": "monitor",
+            "Relations": ["on; wall", "above; table"]
+        },
+        {
+            "Label": "red banner",
+            "Relations": ["on; wall", "behind; table"]
+        },
+        {
+            "Label": "shelves",
+            "Relations": ["behind; table", "left to; chairs"]
+        },
+        {
+            "Label": "stool",
+            "Relations": ["on; floor", "left to; table"]
+        },
+        {
+            "Label": "chair",
+            "Relations": ["on; floor", "left to; stool"]
+        }
+    ],
+    "Scene description": "The scene features a table positioned in front of a wall, with a red banner hanging behind it. On the table, there is a yellow box to the left of a water bottle, and a white cup to the left of a roll of tape. A monitor is mounted on the wall above the table. To the left of the table, there are two chairs, one being a stool and the other a standard chair, both resting on the floor. Shelves are located behind the table, containing various items."
+}
+
+<QUESTION> Is the cup positioned on the table or elsewhere? </QUESTION>
+ Is the cup positioned on the table or elsewhere? 
+yes, do you see? is the white cup left to tape
+ORIGINAL TASK: Pour the water into the cup
+ CONVERSATION:
+YOU:<QUESTION> Is the cup positioned on the table or elsewhere? </QUESTION>
+ HUMAN:yes, do you see? is the white cup left to tape
+<PLAN_INFO> The white cup is positioned on the table, to the left of the roll of tape. </PLAN_INFO>
+ The white cup is positioned on the table, to the left of the roll of tape. 
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; chairs", "right to; yellow box", "left to; water bottle"]
+        },
+        {
+            "Label": "white cup",
+            "Relations": ["on; table", "left to; roll of tape"]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": ["on; table", "right to; white cup"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "left to; white cup"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "right to; roll of tape"]
+        },
+        {
+            "Label": "speaker",
+            "Relations": ["on; floor", "in front of; wall banner"]
+        },
+        {
+            "Label": "wall banner",
+            "Relations": ["behind; speaker", "in front of; shelves"]
+        },
+        {
+            "Label": "shelves",
+            "Relations": ["behind; table", "left to; chairs"]
+        },
+        {
+            "Label": "chairs",
+            "Relations": ["on; floor", "left to; table"]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs. On the table, there is a white cup located to the left of a roll of tape, which is on the right side of the cup. A water bottle is also on the table, positioned to the left of the white cup. To the right of the roll of tape is a yellow box. Behind the table, there is a speaker placed on the floor in front of a wall banner. The wall banner is positioned behind the speaker and in front of some shelves. The shelves are located behind the table and to the left of the chairs."
+}
+
+NAVIGATE to the table  
+GRAB water bottle  
+DROP water bottle above white cup [HUMAN pour water into cup]  
+DROP water bottle next to yellow box  

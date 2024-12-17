@@ -1,0 +1,55 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "between; recycling bins",
+                "behind; can"
+            ]
+        },
+        {
+            "Label": "recycling bin for paper",
+            "Relations": [
+                "on; floor",
+                "left to; recycling bin for plastic"
+            ]
+        },
+        {
+            "Label": "recycling bin for plastic",
+            "Relations": [
+                "on; floor",
+                "right to; recycling bin for paper"
+            ]
+        },
+        {
+            "Label": "green can",
+            "Relations": [
+                "on; table",
+                "in front of; recycling bins"
+            ]
+        },
+        {
+            "Label": "white cloth",
+            "Relations": [
+                "on; table",
+                "right to; green can"
+            ]
+        },
+        {
+            "Label": "blue object",
+            "Relations": [
+                "on; table",
+                "right to; white cloth"
+            ]
+        },
+        {
+            "Label": "red gloves",
+            "Relations": [
+                "on; table",
+                "right to; blue object"
+            ]
+        }
+    ],
+    "Scene description": "The scene depicts a table placed on the floor with two recycling bins on either side. The left bin is designated for paper and the right bin for plastic and metals. On the table, there is a green can positioned in front of the bins, along with a white cloth, a blue object, and a pair of red gloves, all arranged from left to right."
+}

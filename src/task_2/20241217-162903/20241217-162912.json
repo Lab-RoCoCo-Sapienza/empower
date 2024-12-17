@@ -1,0 +1,73 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chair",
+                "right to; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "red tape",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "cardboard box",
+            "Relations": [
+                "on; floor",
+                "left to; table"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "on; floor",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "above; table",
+                "behind; chair"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "behind; chair"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, with a yellow box and a water bottle placed on it. A white cup and red tape are also on the table. To the left of the table, there is a cardboard box on the floor. Behind the table, a chair is located, and above the table, a monitor is mounted. A banner is displayed behind the table, and a shelf is positioned behind the chair."
+}

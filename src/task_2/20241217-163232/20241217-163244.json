@@ -1,0 +1,74 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "behind; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle",
+                "behind; plastic and metal bin"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box",
+                "in front of; plastic cup"
+            ]
+        },
+        {
+            "Label": "plastic cup",
+            "Relations": [
+                "on; table",
+                "in front of; water bottle"
+            ]
+        },
+        {
+            "Label": "plastic and metal bin",
+            "Relations": [
+                "on; floor",
+                "in front of; table",
+                "right to; yellow box"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "on; floor",
+                "left to; table",
+                "behind; plastic and metal bin"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "on; wall",
+                "above; chairs"
+            ]
+        },
+        {
+            "Label": "TV",
+            "Relations": [
+                "on; wall",
+                "above; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned in front of two chairs, with a yellow box and a water bottle on top of it. A plastic cup is also placed on the table, in front of the water bottle. There is a plastic and metal bin on the floor in front of the table, to the right of the yellow box. A shelf is mounted on the wall above the chairs, and a TV is mounted on the wall above the table. A banner is displayed on the wall behind the table."
+}

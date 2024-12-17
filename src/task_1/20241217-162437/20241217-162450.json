@@ -1,0 +1,71 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "black chair",
+            "Relations": [
+                "on; floor",
+                "left to; brown chair",
+                "in front of; table"
+            ]
+        },
+        {
+            "Label": "brown chair",
+            "Relations": [
+                "on; floor",
+                "right to; black chair",
+                "in front of; table"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "on; floor",
+                "behind; chairs"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "on; wall",
+                "above; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned in front of two chairs, a black chair on the left and a brown chair on the right. On the table, there is a yellow box to the right of a water bottle, and a white cup is also placed on the table. Behind the chairs, there is a shelf, and on the wall above the table, a monitor is mounted. A banner is displayed on the wall behind the table, indicating the affiliation with 'Sapienza Universit\u00e0'."
+}

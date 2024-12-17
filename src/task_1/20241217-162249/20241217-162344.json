@@ -1,0 +1,70 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table",
+                "left to; roll of tape"
+            ]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": [
+                "on; table",
+                "right to; white cup"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; white cup"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; roll of tape"
+            ]
+        },
+        {
+            "Label": "speaker",
+            "Relations": [
+                "on; floor",
+                "in front of; wall banner"
+            ]
+        },
+        {
+            "Label": "wall banner",
+            "Relations": [
+                "behind; speaker",
+                "in front of; shelves"
+            ]
+        },
+        {
+            "Label": "shelves",
+            "Relations": [
+                "behind; table",
+                "left to; chairs"
+            ]
+        },
+        {
+            "Label": "chairs",
+            "Relations": [
+                "on; floor",
+                "left to; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs. On the table, there is a white cup located to the left of a roll of tape, which is on the right side of the cup. A water bottle is also on the table, positioned to the left of the white cup. To the right of the roll of tape is a yellow box. Behind the table, there is a speaker placed on the floor in front of a wall banner. The wall banner is positioned behind the speaker and in front of some shelves. The shelves are located behind the table and to the left of the chairs."
+}

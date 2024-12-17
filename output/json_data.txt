@@ -1,0 +1,54 @@
+{
+    "Objects": [
+        {
+            "Label": "TV",
+            "Relations": [
+                "on; wall",
+                "behind; desk"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "under; TV",
+                "behind; desk"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "left to; desk",
+                "on; floor"
+            ]
+        },
+        {
+            "Label": "speaker",
+            "Relations": [
+                "on; desk",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; desk",
+                "right to; speaker",
+                "contains; ball"
+            ]
+        },
+        {
+            "Label": "ball",
+            "Relations": [
+                "in; yellow box"
+            ]
+        },
+        {
+            "Label": "blue paper",
+            "Relations": [
+                "on; desk",
+                "right to; yellow box"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a TV mounted on the wall, positioned above a banner that is attached to the wall behind a desk. To the left of the desk, there is a chair resting on the floor. On the desk, there is a speaker located to the left of a yellow box, which is situated to the right of the speaker. The yellow box contains a ball inside it. Additionally, there is a blue paper on the desk, positioned to the right of the yellow box."
+}

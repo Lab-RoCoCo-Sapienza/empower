@@ -1,0 +1,99 @@
+
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; chairs", "right to; yellow box", "left to; water bottle"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "right to; water bottle"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "left to; yellow box", "in front of; white cup"]
+        },
+        {
+            "Label": "white cup",
+            "Relations": ["on; table", "behind; water bottle"]
+        },
+        {
+            "Label": "chairs",
+            "Relations": ["on; floor", "left to; table", "in front of; wall"]
+        },
+        {
+            "Label": "shelf",
+            "Relations": ["behind; table", "left to; wall"]
+        },
+        {
+            "Label": "banner",
+            "Relations": ["behind; table", "above; shelf"]
+        },
+        {
+            "Label": "monitor",
+            "Relations": ["above; table", "behind; banner"]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, with a yellow box and a water bottle on it. A white cup is also on the table, located behind the water bottle. To the left of the table, there are two chairs on the floor. Behind the table, there is a shelf that holds various items, and above the shelf hangs a banner. A monitor is mounted above the table, positioned behind the banner."
+}
+
+<QUESTION> Is there a ball on the table or anywhere nearby? </QUESTION>
+ Is there a ball on the table or anywhere nearby? 
+the ball is into the box
+ORIGINAL TASK: Put the ball under the table
+ CONVERSATION:
+YOU:<QUESTION> Is there a ball on the table or anywhere nearby? </QUESTION>
+ HUMAN:the ball is into the box
+<PLAN_INFO> The ball is inside the yellow box on the table. </PLAN_INFO>
+ The ball is inside the yellow box on the table. 
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; chairs", "right to; yellow box"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "in front of; speaker", "under; ball"]
+        },
+        {
+            "Label": "ball",
+            "Relations": ["in; yellow box"]
+        },
+        {
+            "Label": "speaker",
+            "Relations": ["on; table", "left to; yellow box"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "left to; cup"]
+        },
+        {
+            "Label": "cup",
+            "Relations": ["on; table", "right to; water bottle"]
+        },
+        {
+            "Label": "chairs",
+            "Relations": ["in front of; table", "left to; shelf"]
+        },
+        {
+            "Label": "shelf",
+            "Relations": ["behind; chairs", "left to; wall"]
+        },
+        {
+            "Label": "wall",
+            "Relations": ["behind; shelf"]
+        },
+        {
+            "Label": "banner",
+            "Relations": ["behind; table", "on; wall"]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs. On the table, there is a yellow box containing a ball, a speaker to the left of the box, and a water bottle and cup arranged on the table. Behind the chairs, there is a shelf, which is adjacent to a wall. A banner is displayed on the wall behind the table."
+}
+
+NAVIGATE to the table  
+GRAB yellow box  
+DROP yellow box left to table [HUMAN help me open the yellow box]  
+GRAB ball  
+DROP ball under the table  

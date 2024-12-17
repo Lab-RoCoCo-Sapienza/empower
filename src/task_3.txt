@@ -1,0 +1,91 @@
+
+{
+    "Objects": [
+        {
+            "Label": "white speaker",
+            "Relations": ["on; table", "left to; yellow box"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "right to; white speaker", "behind; paper"]
+        },
+        {
+            "Label": "notebook",
+            "Relations": ["on; table", "in front of; yellow box"]
+        },
+        {
+            "Label": "paper",
+            "Relations": ["on; table", "in front of; yellow box"]
+        },
+        {
+            "Label": "red cup",
+            "Relations": ["on; table", "left to; yellow box"]
+        },
+        {
+            "Label": "banner",
+            "Relations": ["behind; table", "above; table"]
+        },
+        {
+            "Label": "TV",
+            "Relations": ["above; table", "behind; banner"]
+        },
+        {
+            "Label": "chair",
+            "Relations": ["left to; table", "on; floor"]
+        }
+    ],
+    "Scene description": "The scene features a table with a white speaker on the left side, next to a yellow box on the right. In front of the yellow box, there is a notebook and a piece of paper. A red cup is positioned to the left of the yellow box. Behind the table, there is a banner displaying the name 'Sapienza Università', and above the table, a TV is mounted. To the left of the table, there is a chair on the floor."
+}
+
+<ANSWER>There is no ball in the scene you described. Could you please confirm what object you would like to put under the table?</ANSWER>
+There is no ball in the scene you described. Could you please confirm what object you would like to put under the table?
+, and a bookshelf is located further left, behind the table."
+}
+
+<ANSWER> There is no ball in the current scene description. Could you confirm if there is really a ball and its position, or if it might have been misplaced in the task description? </ANSWER>
+ There is no ball in the current scene description. Could you confirm if there is really a ball and its position, or if it might have been misplaced in the task description? 
+Yes the ball is in the box 
+ORIGINAL TASK: Put the ball under the table
+ CONVERSATION:
+YOU: There is no ball in the current scene description. Could you confirm if there is really a ball and its position, or if it might have been misplaced in the task description? 
+ HUMAN:Yes the ball is in the box 
+<ANSWER>Understood.</ANSWER> 
+
+Here is the plan to put the ball under the table:
+
+1. (MOVE table)
+2. (GRASP yellow box)
+3. (OPEN GRIPPER)
+4. [HUMAN remove the ball from the yellow box and place it on the table]
+5. (MOVE table)
+6. (GRASP ball)
+7. (MOVE under table)
+8. (OPEN GRIPPER) 
+
+The task is completed. Please let me know if you need any changes or additional tasks!
+Understood.
+Don't grasp the yellow box i will do for you that action
+ORIGINAL TASK: Put the ball under the table
+ CONVERSATION:
+YOU: There is no ball in the current scene description. Could you confirm if there is really a ball and its position, or if it might have been misplaced in the task description? 
+ HUMAN:Yes the ball is in the box 
+YOU:Understood.
+ HUMAN:Don't grasp the yellow box i will do for you that action
+<ANSWER>Understood, I will plan the actions considering that you will handle the yellow box.</ANSWER>
+Understood, I will plan the actions considering that you will handle the yellow box.
+Ok
+ORIGINAL TASK: Put the ball under the table
+ CONVERSATION:
+YOU: There is no ball in the current scene description. Could you confirm if there is really a ball and its position, or if it might have been misplaced in the task description? 
+ HUMAN:Yes the ball is in the box 
+YOU:Understood.
+Here is the plan to put the ball under the table:
+
+1. (MOVE table)
+2. (GRASP yellow box)
+3. (OPEN GRIPPER)
+4. [HUMAN remove the ball from the yellow box and place it on the table]
+5. (MOVE table)
+6. (GRASP ball)
+7. (MOVE under table)
+8. (OPEN GRIPPER) 

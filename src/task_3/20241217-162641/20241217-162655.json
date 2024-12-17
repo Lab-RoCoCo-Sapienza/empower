@@ -1,0 +1,76 @@
+{
+    "Objects": [
+        {
+            "Label": "wooden chair",
+            "Relations": [
+                "on; floor",
+                "left to; table"
+            ]
+        },
+        {
+            "Label": "metal stool",
+            "Relations": [
+                "on; floor",
+                "left to; wooden chair"
+            ]
+        },
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; wall",
+                "right to; wooden chair"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": [
+                "on; table",
+                "right to; white cup"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "on; wall",
+                "above; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "shelves",
+            "Relations": [
+                "on; wall",
+                "left to; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a workspace with a table positioned in front of a wall. On the table, there is a yellow box, a water bottle, a white cup, and a roll of tape, arranged from left to right. To the left of the table, there is a wooden chair and a metal stool on the floor. Above the table, a monitor is mounted on the wall, and behind the table, a banner is displayed. Shelves are located to the left of the table, containing various items."
+}

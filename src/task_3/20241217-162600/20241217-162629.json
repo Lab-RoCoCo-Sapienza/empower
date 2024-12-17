@@ -1,0 +1,75 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "in front of; speaker",
+                "under; ball"
+            ]
+        },
+        {
+            "Label": "ball",
+            "Relations": [
+                "in; yellow box"
+            ]
+        },
+        {
+            "Label": "speaker",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; cup"
+            ]
+        },
+        {
+            "Label": "cup",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "chairs",
+            "Relations": [
+                "in front of; table",
+                "left to; shelf"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "behind; chairs",
+                "left to; wall"
+            ]
+        },
+        {
+            "Label": "wall",
+            "Relations": [
+                "behind; shelf"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; table",
+                "on; wall"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs. On the table, there is a yellow box containing a ball, a speaker to the left of the box, and a water bottle and cup arranged on the table. Behind the chairs, there is a shelf, which is adjacent to a wall. A banner is displayed on the wall behind the table."
+}

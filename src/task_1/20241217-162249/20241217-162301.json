@@ -1,0 +1,76 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; wall",
+                "right to; chairs"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "right to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table",
+                "left to; tape"
+            ]
+        },
+        {
+            "Label": "tape",
+            "Relations": [
+                "on; table",
+                "right to; white cup"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "on; wall",
+                "above; table"
+            ]
+        },
+        {
+            "Label": "red banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "shelves",
+            "Relations": [
+                "behind; table",
+                "left to; chairs"
+            ]
+        },
+        {
+            "Label": "stool",
+            "Relations": [
+                "on; floor",
+                "left to; table"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "on; floor",
+                "left to; stool"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned in front of a wall, with a red banner hanging behind it. On the table, there is a yellow box to the left of a water bottle, and a white cup to the left of a roll of tape. A monitor is mounted on the wall above the table. To the left of the table, there are two chairs, one being a stool and the other a standard chair, both resting on the floor. Shelves are located behind the table, containing various items."
+}

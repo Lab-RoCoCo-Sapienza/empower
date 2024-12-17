@@ -1,0 +1,106 @@
+
+{
+    "Objects": [
+        {
+            "Label": "wooden chair",
+            "Relations": ["on; floor", "left to; table"]
+        },
+        {
+            "Label": "metal stool",
+            "Relations": ["on; floor", "left to; wooden chair"]
+        },
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; wall", "right to; wooden chair"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "right to; water bottle"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "left to; yellow box"]
+        },
+        {
+            "Label": "white cup",
+            "Relations": ["on; table", "right to; water bottle"]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": ["on; table", "right to; white cup"]
+        },
+        {
+            "Label": "monitor",
+            "Relations": ["on; wall", "above; table"]
+        },
+        {
+            "Label": "banner",
+            "Relations": ["on; wall", "behind; table"]
+        },
+        {
+            "Label": "shelves",
+            "Relations": ["on; wall", "left to; table"]
+        }
+    ],
+    "Scene description": "The scene features a workspace with a table positioned in front of a wall. On the table, there is a yellow box, a water bottle, a white cup, and a roll of tape, arranged from left to right. To the left of the table, there is a wooden chair and a metal stool on the floor. Above the table, a monitor is mounted on the wall, and behind the table, a banner is displayed. Shelves are located to the left of the table, containing various items."
+}
+
+<QUESTION> Is there a ball present in the workspace? </QUESTION>
+ Is there a ball present in the workspace? 
+yes is into the box
+ORIGINAL TASK: Put the ball under the table
+ CONVERSATION:
+YOU:<QUESTION> Is there a ball present in the workspace? </QUESTION>
+ HUMAN:yes is into the box
+<PLAN_INFO> A ball is present in the workspace, and it is located inside the yellow box. </PLAN_INFO>
+ A ball is present in the workspace, and it is located inside the yellow box. 
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; chairs", "right to; yellow box", "left to; water bottle"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "right to; water bottle", "behind; speaker", "contains; ball"]
+        },
+        {
+            "Label": "ball",
+            "Relations": ["in; yellow box"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "left to; yellow box"]
+        },
+        {
+            "Label": "white cup",
+            "Relations": ["on; table"]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": ["on; table"]
+        },
+        {
+            "Label": "speaker",
+            "Relations": ["on; table", "behind; yellow box"]
+        },
+        {
+            "Label": "chairs",
+            "Relations": ["on; floor", "left to; table", "behind; table"]
+        },
+        {
+            "Label": "shelf",
+            "Relations": ["behind; table"]
+        },
+        {
+            "Label": "banner",
+            "Relations": ["behind; table"]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs. On the table, there is a yellow box, a water bottle, a white cup, and a roll of tape. The yellow box is right to the water bottle and contains a ball. A speaker is also on the table, located behind the yellow box. The chairs are situated to the left of the table and behind it. Additionally, there is a shelf and a banner behind the table, contributing to the workspace environment."
+}
+
+NAVIGATE to the yellow box  
+GRAB ball [HUMAN open yellow box]  
+NAVIGATE to under the table  
+DROP ball under the table  

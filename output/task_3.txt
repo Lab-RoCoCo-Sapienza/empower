@@ -1,0 +1,63 @@
+{
+    "Objects": [
+        {
+            "Label": "black chair",
+            "Relations": [
+                "in front of; desk",
+                "on; floor"
+            ]
+        },
+        {
+            "Label": "white desk",
+            "Relations": [
+                "on; floor",
+                "behind; black chair",
+                "left to; yellow box",
+                "right to; laptop"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; desk",
+                "left to; laptop"
+            ]
+        },
+        {
+            "Label": "laptop",
+            "Relations": [
+                "on; desk",
+                "right to; yellow box"
+            ]
+        },
+        {
+            "Label": "red circular sticker",
+            "Relations": [
+                "on; desk",
+                "in front of; laptop"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; desk",
+                "above; chair"
+            ]
+        },
+        {
+            "Label": "poster",
+            "Relations": [
+                "right to; banner",
+                "in front of; wall"
+            ]
+        },
+        {
+            "Label": "TV",
+            "Relations": [
+                "above; desk",
+                "behind; chair"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a white desk positioned on the floor with a black chair in front of it. On the desk, there is a yellow box to the left of a laptop, which is on the right side of the desk. A red circular sticker is placed in front of the laptop. Behind the desk, there is a banner displaying information about the department, and to the right of the banner, there is a poster. Above the desk, a TV is mounted on the wall, positioned behind the chair."
+}

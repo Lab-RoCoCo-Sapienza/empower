@@ -1,0 +1,72 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; cardboard box"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "right to; yellow box",
+                "in front of; white cup"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table",
+                "behind; water bottle"
+            ]
+        },
+        {
+            "Label": "cardboard box",
+            "Relations": [
+                "on; floor",
+                "left to; table"
+            ]
+        },
+        {
+            "Label": "chairs",
+            "Relations": [
+                "on; floor",
+                "in front of; table",
+                "left to; shelf"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "on; wall",
+                "behind; chairs"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "on; wall",
+                "above; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene depicts a room with a table positioned in front of a wall. On the table, there is a yellow box to the left of a water bottle, which is in front of a white cup. A cardboard box is located on the floor to the left of the table. There are two chairs in front of the table, and a shelf is mounted on the wall behind the chairs. A banner is displayed on the wall behind the table, and a monitor is mounted above the table."
+}

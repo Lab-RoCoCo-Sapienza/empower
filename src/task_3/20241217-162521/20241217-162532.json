@@ -1,0 +1,75 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "sticker tape",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "on; floor",
+                "left to; other chair",
+                "in front of; table"
+            ]
+        },
+        {
+            "Label": "other chair",
+            "Relations": [
+                "on; floor",
+                "right to; chair",
+                "in front of; table"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; table",
+                "above; water bottle"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "above; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, with a yellow box and a water bottle on it. A white cup and a roll of sticker tape are also placed on the table. In front of the table, there are two chairs: one is to the left of the other. Behind the table, there is a shelf and a banner displaying the name 'Sapienza Universit\u00e0'. Above the table, a monitor is mounted on the wall."
+}

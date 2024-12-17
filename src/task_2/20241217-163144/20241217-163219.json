@@ -1,0 +1,80 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; recycling box"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box",
+                "in front of; recycling box"
+            ]
+        },
+        {
+            "Label": "recycling box",
+            "Relations": [
+                "on; floor",
+                "in front of; table",
+                "left to; chairs"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": [
+                "on; table",
+                "left to; white cup"
+            ]
+        },
+        {
+            "Label": "chairs",
+            "Relations": [
+                "on; floor",
+                "left to; table",
+                "behind; recycling box"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "above; chairs",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "TV screen",
+            "Relations": [
+                "above; table",
+                "behind; yellow box"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; table",
+                "above; recycling box"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of several chairs. On the table, there is a yellow box to the right of a water bottle, which is left of the yellow box. A white cup is placed to the right of the water bottle, while a roll of tape is situated to the left of the cup. In front of the table, there is a recycling box on the floor, which is left of the chairs. Above the chairs, there is a shelf, and behind the table, a TV screen is mounted on the wall. Additionally, a banner is displayed behind the table, above the recycling box. The human intends to throw away only the water bottle."
+}

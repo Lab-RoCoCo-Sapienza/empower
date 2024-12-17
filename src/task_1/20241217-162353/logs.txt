@@ -1,0 +1,106 @@
+
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; chairs", "right to; yellow box", "left to; water bottle"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "right to; water bottle"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "left to; yellow box"]
+        },
+        {
+            "Label": "white cup",
+            "Relations": ["on; table"]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": ["on; table"]
+        },
+        {
+            "Label": "chair",
+            "Relations": ["on; floor", "in front of; table", "left to; other chair"]
+        },
+        {
+            "Label": "other chair",
+            "Relations": ["on; floor", "in front of; table", "right to; chair"]
+        },
+        {
+            "Label": "shelf",
+            "Relations": ["behind; table"]
+        },
+        {
+            "Label": "banner",
+            "Relations": ["behind; table"]
+        },
+        {
+            "Label": "monitor",
+            "Relations": ["above; table"]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, with a yellow box and a water bottle on it. A white cup and a roll of tape are also placed on the table. In front of the table, there are two chairs, one to the left and one to the right. Behind the table, there is a shelf and a banner displaying the name 'Sapienza Università di Roma'. Above the table, a monitor is mounted."
+}
+
+<QUESTION> Is the cup empty and ready to be filled with water? </QUESTION>
+ Is the cup empty and ready to be filled with water? 
+the cup is empty
+ORIGINAL TASK: Pour the water into the cup
+ CONVERSATION:
+YOU:<QUESTION> Is the cup empty and ready to be filled with water? </QUESTION>
+ HUMAN:the cup is empty
+<PLAN_INFO> The cup is empty and ready to be filled with water. </PLAN_INFO>
+ The cup is empty and ready to be filled with water. 
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": ["on; floor", "in front of; chairs", "right to; yellow box", "left to; water bottle"]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": ["on; table", "right to; water bottle"]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": ["on; table", "left to; yellow box"]
+        },
+        {
+            "Label": "white cup",
+            "Relations": ["on; table", "left to; water bottle", "empty; ready to be filled with water"]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": ["on; table", "right to; white cup"]
+        },
+        {
+            "Label": "monitor",
+            "Relations": ["on; wall", "above; table"]
+        },
+        {
+            "Label": "red banner",
+            "Relations": ["behind; table", "on; wall"]
+        },
+        {
+            "Label": "stool",
+            "Relations": ["left to; table", "on; floor"]
+        },
+        {
+            "Label": "chair",
+            "Relations": ["left to; stool", "on; floor"]
+        },
+        {
+            "Label": "shelves",
+            "Relations": ["behind; chairs", "on; wall"]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs and a stool. On the table, there is a yellow box to the right of a water bottle, which is to the left of an empty white cup, ready to be filled with water. A roll of tape is located to the right of the cup. Above the table, there is a monitor mounted on the wall, and behind the table hangs a red banner. To the left of the table, there is a stool, and adjacent to it is a chair, both resting on the floor. Behind the chairs, there are shelves mounted on the wall."
+}
+
+NAVIGATE to the table  
+GRAB water bottle  
+DROP water bottle right to cup  
+GRAB cup [HUMAN pour water from bottle into cup]

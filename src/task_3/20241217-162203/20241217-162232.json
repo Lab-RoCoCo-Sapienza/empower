@@ -1,0 +1,77 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "in front of; chairs",
+                "left to; water bottle",
+                "contains; ball"
+            ]
+        },
+        {
+            "Label": "ball",
+            "Relations": [
+                "in; yellow box"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "tape",
+            "Relations": [
+                "on; table",
+                "right to; white cup"
+            ]
+        },
+        {
+            "Label": "chairs",
+            "Relations": [
+                "in front of; table",
+                "left to; shelves"
+            ]
+        },
+        {
+            "Label": "shelves",
+            "Relations": [
+                "behind; chairs",
+                "left to; table"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs. On the table, there is a yellow box that contains a ball, a water bottle to the left of the box, a white cup to the right of the water bottle, and tape to the right of the cup. Behind the chairs, there are shelves, and on the wall behind the table, there is a monitor and a banner displaying the name 'Sapienza Universit\u00e0'."
+}

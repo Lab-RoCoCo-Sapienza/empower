@@ -1,0 +1,75 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle",
+                "behind; speaker",
+                "contains; ball"
+            ]
+        },
+        {
+            "Label": "ball",
+            "Relations": [
+                "in; yellow box"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "speaker",
+            "Relations": [
+                "on; table",
+                "behind; yellow box"
+            ]
+        },
+        {
+            "Label": "chairs",
+            "Relations": [
+                "on; floor",
+                "left to; table",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, in front of two chairs. On the table, there is a yellow box, a water bottle, a white cup, and a roll of tape. The yellow box is right to the water bottle and contains a ball. A speaker is also on the table, located behind the yellow box. The chairs are situated to the left of the table and behind it. Additionally, there is a shelf and a banner behind the table, contributing to the workspace environment."
+}

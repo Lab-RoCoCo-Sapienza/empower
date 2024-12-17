@@ -1,0 +1,70 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "behind; yellow box"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; plastic cup",
+                "in front of; yellow box"
+            ]
+        },
+        {
+            "Label": "plastic cup",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "on; floor",
+                "left to; table"
+            ]
+        },
+        {
+            "Label": "second chair",
+            "Relations": [
+                "on; floor",
+                "left to; first chair"
+            ]
+        },
+        {
+            "Label": "box for recycling",
+            "Relations": [
+                "on; floor",
+                "in front of; table"
+            ]
+        },
+        {
+            "Label": "TV",
+            "Relations": [
+                "on; wall",
+                "above; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned in front of two chairs. On the table, there is a yellow box, a water bottle, and a plastic cup, indicating that the human intends to throw away the plastic cup and the water bottle. The table is also located in front of a recycling box. Behind the table, there is a banner, and above it, a TV is mounted on the wall."
+}

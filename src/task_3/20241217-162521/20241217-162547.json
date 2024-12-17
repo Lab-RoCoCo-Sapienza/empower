@@ -1,0 +1,78 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "behind; yellow box",
+                "in front of; chairs"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "under; table"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "right to; paper cup"
+            ]
+        },
+        {
+            "Label": "paper cup",
+            "Relations": [
+                "on; table",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "in front of; table",
+                "on; floor",
+                "left to; other chair"
+            ]
+        },
+        {
+            "Label": "other chair",
+            "Relations": [
+                "in front of; table",
+                "on; floor",
+                "right to; chair"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "on; wall",
+                "above; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "on; wall",
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "cables",
+            "Relations": [
+                "on; table",
+                "in front of; monitor"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "behind; table",
+                "on; floor"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, with a yellow box placed on top of it and also indicated to be put under the table. A water bottle is located on the table, right to a paper cup. In front of the table, there are two chairs: one on the left and another on the right. A monitor is mounted on the wall above the table, with a banner behind it. Cables are spread across the table, and a shelf is situated behind the table."
+}

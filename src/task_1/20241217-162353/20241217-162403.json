@@ -1,0 +1,74 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "roll of tape",
+            "Relations": [
+                "on; table"
+            ]
+        },
+        {
+            "Label": "chair",
+            "Relations": [
+                "on; floor",
+                "in front of; table",
+                "left to; other chair"
+            ]
+        },
+        {
+            "Label": "other chair",
+            "Relations": [
+                "on; floor",
+                "in front of; table",
+                "right to; chair"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; table"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "above; table"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, with a yellow box and a water bottle on it. A white cup and a roll of tape are also placed on the table. In front of the table, there are two chairs, one to the left and one to the right. Behind the table, there is a shelf and a banner displaying the name 'Sapienza Universit\u00e0 di Roma'. Above the table, a monitor is mounted."
+}

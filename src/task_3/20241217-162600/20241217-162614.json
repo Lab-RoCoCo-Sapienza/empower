@@ -1,0 +1,65 @@
+{
+    "Objects": [
+        {
+            "Label": "table",
+            "Relations": [
+                "on; floor",
+                "in front of; chairs",
+                "right to; yellow box",
+                "left to; water bottle"
+            ]
+        },
+        {
+            "Label": "yellow box",
+            "Relations": [
+                "on; table",
+                "right to; water bottle"
+            ]
+        },
+        {
+            "Label": "water bottle",
+            "Relations": [
+                "on; table",
+                "left to; yellow box",
+                "in front of; white cup"
+            ]
+        },
+        {
+            "Label": "white cup",
+            "Relations": [
+                "on; table",
+                "behind; water bottle"
+            ]
+        },
+        {
+            "Label": "chairs",
+            "Relations": [
+                "on; floor",
+                "left to; table",
+                "in front of; wall"
+            ]
+        },
+        {
+            "Label": "shelf",
+            "Relations": [
+                "behind; table",
+                "left to; wall"
+            ]
+        },
+        {
+            "Label": "banner",
+            "Relations": [
+                "behind; table",
+                "above; shelf"
+            ]
+        },
+        {
+            "Label": "monitor",
+            "Relations": [
+                "above; table",
+                "behind; banner"
+            ]
+        }
+    ],
+    "Scene description": "The scene features a table positioned on the floor, with a yellow box and a water bottle on it. A white cup is also on the table, located behind the water bottle. To the left of the table, there are two chairs on the floor. Behind the table, there is a shelf that holds various items, and above the shelf hangs a banner. A monitor is mounted above the table, positioned behind the banner."
+}
